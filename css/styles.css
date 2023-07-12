@@ -119,6 +119,13 @@ h1, h2, h3, p, li, ul { margin: 0; }
     font-family: "Raleway", sans-serif;
     display: inline-block;
 }
+@media only screen and (max-width: 428px) {
+    .logo-footer-web {
+        text-align: center;
+        display: block;
+    }
+}
+    
 
 .logo-elem {
     margin-right: 76px;
@@ -355,9 +362,9 @@ h1, h2, h3, p, li, ul { margin: 0; }
 } */
 
 .feature-componets {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
+    
+    width: 396px;
+    display: list-item;
     
 }
 @media only screen and (max-width: 768px) {
@@ -374,8 +381,8 @@ h1, h2, h3, p, li, ul { margin: 0; }
 
     @media only screen and (min-width: 1158px) {
         .feature-componets {
-          flex-basis: calc((100% - 24px * 3) / 4);
-          width: calc((100% - 72px) / 4);
+            flex-basis: calc((100% - 24px * 3) / 4);
+            width: calc((100% - 72px) / 4);
             flex-direction: column;
             align-items: flex-start;
             padding: 0px;
@@ -426,12 +433,10 @@ h1, h2, h3, p, li, ul { margin: 0; }
         align-self: stretch;
         margin-bottom: 72px;
     }
+    
     @media only screen and (max-width: 1158px) {
         .feature-description {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 1.5;
-            letter-spacing: 0.32px;
+            
         }
       }
       @media only screen and (min-width: 1158px) {
@@ -690,11 +695,14 @@ h1, h2, h3, p, li, ul { margin: 0; }
     flex-wrap: nowrap;
 }
 }
-
-
-
+.social-box {
+    text-align: center;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 1158px) {
 .social-box {
     margin-right: 80px;
+}
 }
 .footer-logo-p {
     margin-right: 120px;
@@ -712,8 +720,10 @@ h1, h2, h3, p, li, ul { margin: 0; }
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.32px; 
 }
+
+
 
 .footer-icon-p {
     font-weight: 500;
@@ -723,8 +733,16 @@ h1, h2, h3, p, li, ul { margin: 0; }
     letter-spacing: 0.32px;
     color: var(--white-background);
     margin-bottom: 16px;
-}
 
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+@media only screen and (min-width: 1158px) {
+    .footer-icon-p {
+        justify-content: flex-start;
+    }
+}
 .team-icon-footer {
     width: 40px;
     height: 40px;
@@ -756,16 +774,19 @@ fill: var(--light-cloud);
 }   
 
 .wraper {
-
+    width: 100%;
 }
 
-.subscribe-form {
-    display: flex;
-    gap: 24px; 
-    
+@media only screen and (min-width: 1158px) {
+    .subscribe-form {
+        display: flex;
+        gap: 24px;  
 }
+}
+
+
 .sbcr-input {
-    width: 264px;
+    width: 100%;
     height: 40px;
     padding: 8px 16px;
     color: var(--white-background);
@@ -777,8 +798,16 @@ fill: var(--light-cloud);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     font-size: 12px;
     line-height: 1.5;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.48px;
+    margin-bottom: 16px;
 }
+@media only screen and (min-width: 1158px) {
+    .sbcr-input {
+        width: 264px; 
+        letter-spacing: 0.04em;
+}
+}
+
 .sbcr-input ::placeholder {
     color: var(--white-background);
 }
@@ -790,7 +819,16 @@ fill: var(--light-cloud);
     letter-spacing: 0.32px;
     color: var(--white-background);
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
 }
+@media only screen and (min-width: 1158px) {
+    .subscr-text {
+        justify-content: flex-start;
+    }
+}
+
+
 .subscribe-button {
     background-color: var(--primary-brand-iris);
     color: var(--white-background);
@@ -808,10 +846,15 @@ fill: var(--light-cloud);
     gap: 16px;
     min-width: 165px;
     height: 40px; 
-    cursor: pointer;
     border: none;
+    margin-left: 97.5px;
 }
-
+@media only screen and (min-width: 1158px) {
+    .subscribe-button {
+        cursor: pointer;
+        margin-left: 0;
+    }
+}
 .arrow-frame {
     margin-left: 16px;
     
