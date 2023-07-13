@@ -93,6 +93,11 @@ h1, h2, h3, p, li, ul { margin: 0; }
     align-items: center;
 }
 }
+@media screen and (min-width: 768px) {
+    .container-nav {
+        padding-top: 0;
+    } 
+}
 .nav-header {
     align-items: center;
     display: flex;
@@ -211,10 +216,15 @@ h1, h2, h3, p, li, ul { margin: 0; }
     margin-left: auto;
 }
 
+@media only screen and (min-width: 1157px){
 .main-contact {
     display: flex; 
     gap: 40px;    
 }
+} 
+    
+
+
 .contact {
     font-weight: 400;
     font-size: 16px;
@@ -460,7 +470,8 @@ h1, h2, h3, p, li, ul { margin: 0; }
 }
 @media only screen and (min-width: 768px) {
     .features-heading {
-    text-align: left;
+        display: flex;
+        align-items: flex-start;
         }
 }
     .feature-description {
@@ -601,7 +612,7 @@ h1, h2, h3, p, li, ul { margin: 0; }
 .team-card-name {
     font-weight: 500;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     color: var(--dark-navy-blue);
     letter-spacing: 0.02em;
     text-align: center;
@@ -676,6 +687,15 @@ h1, h2, h3, p, li, ul { margin: 0; }
     gap: 72px 16px;
 }
 
+@media only screen and (min-width: 768px){
+    .customer-section {
+        gap: 72px 24px;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+
 @media only screen and (min-width: 1158px) {
 .customer-section {
     justify-content: center;
@@ -689,10 +709,16 @@ h1, h2, h3, p, li, ul { margin: 0; }
     width: calc((100% - 16px) / 2);
     height: 88px;
 }
+
+@media only screen and (min-width: 768px) {
+    .customer-li {
+        width: calc((100% - 24px) / 4);
+    } 
+}
 @media only screen and (min-width: 1158px) {
 .customer-li {
     width: calc((100% - 120px) / 6);
-    height: 88px;
+
 }
 }
 
@@ -723,6 +749,8 @@ h1, h2, h3, p, li, ul { margin: 0; }
     fill: currentColor;
 }
 
+
+/*Footer*/
 
 
 .footer-section {
@@ -760,11 +788,15 @@ h1, h2, h3, p, li, ul { margin: 0; }
 .footer-logo-p {
     margin-right: 120px;
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 1157px) {
     .footer-logo-p {
         margin: 0 auto;
     }
 }
+
+
+
 .footer-text {
     color: var(--light-cloud);
     line-height: 1.5;
