@@ -1159,9 +1159,11 @@ fill: var(--light-cloud);
 
 /*Mobile Menu*/
 
+
+
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    width: 32px;
+    height: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1283,13 +1285,16 @@ fill: var(--light-cloud);
 .menu-icon {
     width: 24px;
     height: 24px;
+    position: absolute;
     border-radius: 50%;
-    fill: var(--accent-cornflower);
+    border: 1px solid var(--accent-cornflower);
+    
     stroke-width: 1px;
     stroke: var(--dark-navy-blue);
-    opacity: 0.10000000149011612;
+    
         
 }
+
 .mobile-btn-close {
     fill: var(--dark-navy-blue);
 
