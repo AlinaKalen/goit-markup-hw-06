@@ -1193,6 +1193,7 @@ fill: var(--light-cloud);
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    padding: 80px 35px 80px 40px;
    
 }
 .menu-container .menu-toggle {
@@ -1202,8 +1203,6 @@ fill: var(--light-cloud);
     color: #fff;
 }
 .mobile-menu {
-    padding-top: 80px;
-    padding-left: 40px;
     width: fit-content;
 }
 @media (min-width: 768px) {
@@ -1234,8 +1233,7 @@ fill: var(--light-cloud);
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    margin-top: 284px;
-    padding-left: 40px;
+    padding-top: 284px;
     margin-bottom: 48px;
 }
 
@@ -1246,7 +1244,7 @@ fill: var(--light-cloud);
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.72px;
-    text-transform: capitalize;
+    
     color: var(--primary-brand-iris);
 }
 .mobile-email {
@@ -1262,8 +1260,7 @@ fill: var(--light-cloud);
     display: inline-flex;
     align-items: flex-start;
     gap: 56px;
-    padding-left: 40px;
-    padding-bottom: 40px;
+    
     }
 .mobile-list {
     width: 40px;
