@@ -40,8 +40,8 @@ h1, h2, h3, p, li, ul { margin: 0; }
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 /* Tablet screen */
@@ -55,8 +55,7 @@ h1, h2, h3, p, li, ul { margin: 0; }
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
-        padding-right: 15px;
-        padding-left: 15px;
+        
     }
 }
 
@@ -507,13 +506,13 @@ h1, h2, h3, p, li, ul { margin: 0; }
 
 /* Desctop Section*/
 
-@media only screen and (max-width: 1157px) {
+@media only screen and (max-width: 1158px) {
     .item-section {display: none;}
     .seconadry-header {display: none;}
     .list-item {display: none;}
     .list-item-section {display: none;}
   }  
-  
+
 
 @media only screen and (min-width: 1158px)  {
 .seconadry-header {
@@ -712,7 +711,7 @@ h1, h2, h3, p, li, ul { margin: 0; }
 
 @media only screen and (min-width: 768px) {
     .customer-li {
-        width: calc((100% - 24px) / 4);
+        width: 168px;
     } 
 }
 @media only screen and (min-width: 1158px) {
@@ -1280,6 +1279,12 @@ fill: var(--light-cloud);
     padding: 80px 35px 80px 40px;
    
 }
+@media (min-width: 1158px) {
+    .menu-container {
+        display: none;
+    }
+}
+
 .menu-container .menu-toggle {
     position: absolute;
     top: 16px;
@@ -1296,6 +1301,8 @@ fill: var(--light-cloud);
 }
 .list-mobile-menu:not(:last-child) {
     margin-bottom: 40px;
+    
+    
 }
 
 .mobile-menu-link {
