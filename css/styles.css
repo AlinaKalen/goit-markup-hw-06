@@ -826,7 +826,8 @@ h1, h2, h3, p, li, ul { margin: 0; }
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 0.32px; 
+    letter-spacing: 0.32px;
+    text-align: left; 
     
 }
 .social-box {
@@ -835,6 +836,11 @@ h1, h2, h3, p, li, ul { margin: 0; }
     margin: 0 auto;
 }
 
+@media only screen and (min-width: 768px) {
+    .social-box {
+        margin: 0;
+    }
+}
 .footer-icon-p {
     font-weight: 500;
     font-size: 16px;
@@ -896,6 +902,8 @@ fill: var(--light-cloud);
         display: flex;
         flex-direction: row;
         align-items: unset;
+        column-gap: 24px;
+
     }
 }
  
@@ -942,6 +950,7 @@ fill: var(--light-cloud);
     }
 }
 .subscribe-button {
+    margin: 0 auto;
     background-color: var(--primary-brand-iris);
     color: var(--white-background);
     font-size: 16px;
@@ -959,12 +968,19 @@ fill: var(--light-cloud);
     min-width: 165px;
     height: 40px; 
     border: none;
-    margin-left: 97.5px;
+    
+    
 }
+@media only screen and (min-width: 768px) {
+    .subscribe-button {
+        margin: 0;
+    }
+}
+
 @media only screen and (min-width: 1158px) {
     .subscribe-button {
         cursor: pointer;
-        margin-left: 0;
+        margin-left: 97.5px;
     }
 }
 .arrow-frame {
