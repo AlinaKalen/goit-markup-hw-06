@@ -20,7 +20,7 @@
 
   <body>
     <header class="top-line">
-      <div class="container container-nav">
+      <div class="container-nav">
         <nav class="nav-header">
           <a href="./index.html" class="logo link logo-elem">
               Web
@@ -38,18 +38,34 @@
 
         <address class="main-address">
           <ul class="list main-contact">
-            <li>
+            <li class="contact-list">
               <a href="mailto:info@devstudio.com" class="contact link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contact-list">
               <a href="tel:+110001111111" class="contact link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+        <g clip-path="url(#clip0_297053_2156)">
+          <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_297053_2156">
+            <rect width="32" height="22" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+      </button>
     </div>
     </header>
 
@@ -291,7 +307,7 @@
   
           <form class="subscribe-form" name="subscribe" autocomplete="off">
             <label class="form-sbcr">
-              <input class="sbcr-input" type="email" name="email" placeholder="E-mail" autofocus>
+              <input class="sbcr-input" type="email" name="email" placeholder="E-mail">
             </label> 
               <button class="subscribe-button" type="submit"> Subscribe
             <svg class="arrow-frame" width="24" height="24">
@@ -303,7 +319,86 @@
         </div>
       </div> 
       </footer>
-  
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class=" menu-icon menu-toggle  js-close-menu">
+          <svg class="mobile-btn-close"  width="8" height="8">
+            <use href="./images/icons.svg#close">
+            </use>
+        </svg>
+        </button>
+
+    <ul class="mobile-menu list">
+        <li class="list-mobile-menu">
+          <a class="mobile-menu-link link mobile-menu-link-active" href="./index.html" rel="noopener noreferrer">Studio</a>
+        </li>
+
+        <li class="list-mobile-menu">
+          <a class="mobile-menu-link link" href="./portfolio.html" rel="noopener noreferrer">Portfolio</a>
+        </li>
+
+        <li class="list-mobile-menu">
+            <a class="mobile-menu-link link" href="" rel="noopener noreferrer">Contacts</a>
+        </li>
+
+    </ul>
+
+    <ul class="mobile-contacts list">
+        <li class="mobile-contacts-li">
+            <a class="mobile-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+
+        <li class="mobile-item-contacts">
+            <a class="mobile-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+    </ul>
+
+    <ul class="mobile-socials list">
+      <li class="mobile-list">
+          <a class="mobile-social-link link" href="" rel="noopener noreferrer" target="_blank" aria-label="link to instagram">
+            <svg class="mobile-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram">
+              </use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile-list">
+          <a class="mobile-social-link link" href="" rel="noopener noreferrer" target="_blank" aria-label="link to twitter">
+              <svg class="mobile-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter">
+                  </use>
+              </svg>
+          </a>
+        </li>
+
+        <li class="mobile-list">
+            <a class="mobile-social-link link" href="" rel="noopener noreferrer" target="_blank" aria-label="link to facebook">
+              <svg class="mobile-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook">
+                </use>
+              </svg>
+            </a>
+        </li>
+
+        <li class="mobile-list">
+          <a class="mobile-social-link link" href="" rel="noopener noreferrer" target="_blank" aria-label="link to linkedin">
+            <svg class="mobile-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin">
+              </use>
+            </svg>
+          </a>
+        </li>
+    </ul>
+  </div>
+
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
   </body>
 
