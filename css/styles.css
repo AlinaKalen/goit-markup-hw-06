@@ -293,11 +293,11 @@ h1, h2, h3, p, li, ul { margin: 0; }
     max-width: 1440px;
     margin: 0 auto;
     }
-@media screen and (min-width: 1158px) {
+/*@media screen and (min-width: 1158px) {
     .hero-image { padding: 188px 0;
 
     }
-}
+}*/
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-image {
@@ -321,6 +321,8 @@ h1, h2, h3, p, li, ul { margin: 0; }
 
 @media only screen and (min-width: 769px) {
     .hero-image {
+        max-width: 1440px;
+        padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
     url("../images/people-office.jpg");
     }
@@ -1266,6 +1268,7 @@ fill: var(--light-cloud);
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
 }
 .is-hidden {
     opacity: 0;
@@ -1275,25 +1278,32 @@ fill: var(--light-cloud);
 
 .modal {
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     min-height: 584px;
     width: 100%;
     max-width: 392px;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%) scale(1);
     padding: 72px 24px 24px 24px;
     background-color: var(--dairy-modal-background);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 @media screen and (min-width: 768px) {
     .modal {
         max-width: 408px;
         min-height: 584px;
     }
 }
+@media screen and (min-width: 1158px) {
+    .modal {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    } 
+}
+
+
 
 .modal-button {
     position: absolute;
@@ -1343,7 +1353,7 @@ fill: var(--light-cloud);
     display: block;
     text-align: center;
     margin-bottom: 16px;
-    width: 360px;
+    max-width: 360px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -1549,7 +1559,7 @@ fill: var(--light-cloud);
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
     padding: 80px 35px 80px 40px;
-   
+    overflow: scroll;
 }
 @media (min-width: 1158px) {
     .menu-container {
@@ -1573,8 +1583,6 @@ fill: var(--light-cloud);
 }
 .list-mobile-menu:not(:last-child) {
     margin-bottom: 40px;
-    
-    
 }
 
 .mobile-menu-link {
@@ -1620,21 +1628,20 @@ fill: var(--light-cloud);
     color: var(--text-slate);
 }
 .mobile-socials {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 56px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 328px;
     
     }
 .mobile-list {
-    width: 40px;
-    height: 40px;
+    
     background-color: var(--primary-brand-iris);
     border-radius: 50%; 
 }
 
 .mobile-social-link {
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
     background-color: var(--primary-brand-iris);
     border-radius: 50%;
     justify-content: center;
