@@ -150,6 +150,7 @@ h1, h2, h3, p, li, ul { margin: 0; }
     line-height: 1.17;
     font-family: "Raleway", sans-serif;
     display: inline-block;
+    margin-bottom: 16px;
 }
 @media only screen and (max-width: 428px) {
     .logo-footer-web {
@@ -189,7 +190,6 @@ h1, h2, h3, p, li, ul { margin: 0; }
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     display: inline-block;
-    margin-bottom: 16px;  
 }
 
 .header-link{
@@ -290,7 +290,7 @@ h1, h2, h3, p, li, ul { margin: 0; }
     background-position: center;
     background-size: cover;
     padding: 112px 0;
-    max-width: 1440px;
+    
     margin: 0 auto;
     }
 /*@media screen and (min-width: 1158px) {
@@ -888,10 +888,14 @@ h1, h2, h3, p, li, ul { margin: 0; }
     letter-spacing: 0.32px;
     color: var(--white-background);
     margin-bottom: 16px;
-
     display: flex;
     align-items: baseline;
     justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+    .footer-icon-p {
+        justify-content: flex-start;
+    }
 }
 .team-icon-li {
     display: flex;
@@ -986,6 +990,7 @@ fill: var(--light-cloud);
     .sbcr-input {
         width: 264px;
         height: 40px;
+        margin-bottom: 0;
     }
 }
 .subscribe-button {
@@ -1019,249 +1024,14 @@ fill: var(--light-cloud);
 @media only screen and (min-width: 1158px) {
     .subscribe-button {
         cursor: pointer;
+        width: 165px;
     }
 }
-.arrow-frame {
+/*.arrow-frame {
     margin-left: 16px;
     
-}
-/*
+}*/
 
-
-@media only screen and (min-width: 1158px) {
-.footer-section {
-    padding: 100px 0;
-}
-}
-.container-footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-    
-}
-
-@media screen and (min-width: 658px) {
-    .container-footer  {
-    max-width: 584px;
-    row-gap: 72px;
-    column-gap: 24px;
-}
-}
-
-@media only screen and (min-width: 1158px) {
-.container-footer {
-    max-width: 1158px;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: nowrap;
-    
-}
-}
-.social-box {
-    text-align: center;
-    margin: 0 auto;
-}
-@media only screen and (min-width: 1158px) {
-.social-box {
-    padding-right: 80px;
-}
-}
-.footer-logo-p {
-    margin-right: 120px;
-}
-
-@media screen and (max-width: 1157px) {
-    .footer-logo-p {
-        margin: 0 auto;
-    }
-}
-
-
-
-.footer-text {
-    color: var(--light-cloud);
-    line-height: 1.5;
-    width: 264px;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.32px; 
-}
-
-
-
-.footer-icon-p {
-    font-weight: 500;
-    font-size: 16px;
-    font-family: Roboto;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-    color: var(--white-background);
-    margin-bottom: 16px;
-
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-}
-@media only screen and (min-width: 1158px) {
-    .footer-icon-p {
-        justify-content: flex-start;
-    }
-}
-.team-icon-footer {
-    width: 40px;
-    height: 40px;
-}
-
-.footer-link {
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-brand-iris);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-icon-li {
-    gap: 16px;
-    display: flex;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-    background-color: var(--success-green);
-}
-
-.icon-footer {
-fill: var(--light-cloud);
-}   
-
-@media only screen and (min-width: 768px) {
-    .subscribe-form {
-        display: flex;
-        gap: 24px;
-    }
-}
-
-@media only screen and (min-width: 1158px) {
-    .subscribe-form {
-        display: flex;
-        gap: 24px;  
-}
-}
-
-
-.sbcr-input {
-    width: 100%;
-    height: 40px;
-    padding: 8px 16px;
-    color: var(--white-background);
-    background-color: transparent;
-    border-radius: 4px;
-    border: 1px solid var(--white-background);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    outline: transparent;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.48px;
-    margin-bottom: 16px;
-}
-@media only screen and (min-width: 1158px) {
-    .sbcr-input {
-        width: 264px; 
-        letter-spacing: 0.04em;
-}
-}
-
-.sbcr-input ::placeholder {
-    color: var(--white-background);
-}
-.subscr-text {
-    font-size: 16px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    color: var(--white-background);
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
-}
-@media only screen and (min-width: 1158px) {
-    .subscr-text {
-        justify-content: flex-start;
-    }
-}
-@media screen and (min-width: 768px) {
-.subscr-text {
-    display: flex;
-    letter-spacing: 0.02em;
-    justify-content: flex-start;
-}
-}
-
-
-    .form-sbcr {  
-    width: 100%; 
-}
-
-@media screen and (min-width: 768px) {
-    .wraper {
-        margin: 0 14px;
-    }
-}
-
-.form-sbcr {
-   
-}
-@media screen and (min-width: 768px) {
-    .form-sbcr {
-        width: 264px;
-
-    }
-}
-
-
-.subscribe-button {
-    background-color: var(--primary-brand-iris);
-    color: var(--white-background);
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    text-align: center;
-    border-radius: 4px;
-    display: flex;
-    padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    min-width: 165px;
-    height: 40px; 
-    border: none;
-    margin-left: 97.5px;
-}
-@media screen and (min-width: 768px) {
-    .subscribe-button {
-        margin: 0 24px ;
-        
-    }
-}
-@media only screen and (min-width: 1158px) {
-    .subscribe-button {
-        cursor: pointer;
-        margin-left: 0;
-    }
-}
-.arrow-frame {
-    margin-left: 16px;
-    
-}
 
          /*Modal window*/
 
@@ -1564,7 +1334,7 @@ fill: var(--light-cloud);
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
     padding: 80px 35px 80px 40px;
-    overflow: scroll;
+   
 }
 @media (min-width: 1158px) {
     .menu-container {
@@ -1604,12 +1374,13 @@ fill: var(--light-cloud);
 .mobile-menu-link-active {
     color: var(--pressed-state-ocean);
 }
+
 .mobile-contacts {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    padding-top: 284px;
+    margin-top: auto;
     margin-bottom: 48px;
 }
 
